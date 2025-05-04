@@ -1,0 +1,1 @@
+import {alovaIns} from './request'
