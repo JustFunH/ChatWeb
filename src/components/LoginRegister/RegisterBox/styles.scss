@@ -1,0 +1,54 @@
+.register-container {
+  
+    h2 {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+  
+    .subtitle {
+      text-align: center;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+  
+    .el-form-item {
+      margin-bottom: 20px;
+    }
+  
+    .code-group {
+      flex-grow: 1;
+      display: flex;
+      gap: 10px;
+  
+      .el-input {
+        flex: 1 1 auto;
+      }
+  
+      .code-btn {
+        width: 120px;
+        flex-shrink: 0;
+        white-space: nowrap;
+        padding: 0 12px;
+      }
+    }
+  
+    .submit-btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .form-footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #bbb;
+  
+      a {
+        color: #409eff;
+        margin-left: 5px;
+      }
+    }
+  }
+  

@@ -1,0 +1,15 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx","src/**/*.vue","components.d.ts","auto-imports.d.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": { "@/*": ["./src/*"] },
+    "isolatedModules": false,
+    "ignoreDeprecations": "5.0",
+    "verbatimModuleSyntax": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+  },
+  "lib": ["WebWorker"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

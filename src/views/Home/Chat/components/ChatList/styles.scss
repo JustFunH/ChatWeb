@@ -1,0 +1,54 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.chat-msg-list {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto;
+
+  // 取消滚动链接
+  overscroll-behavior-y: contain;
+
+  // 强制硬件加速
+  transform: translate3d(0, 0, 0);
+  perspective: 1000;
+
+  .loading {
+    position: absolute;
+    top: 50px;
+    z-index: 20;
+    gap: 4px;
+    width: 100%;
+    padding: 16px 0;
+    font-size: 14px;
+    color: var(--font-light-1);
+    background: linear-gradient(180deg, rgb(50, 54, 68) 0%, transparent 85%);
+
+    svg {
+      animation: rotate 2s linear infinite;
+    }
+  }
+
+  .empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: var(--font-light);
+  }
+}
